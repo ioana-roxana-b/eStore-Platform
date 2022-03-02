@@ -1,0 +1,14 @@
+Am reusit sa implementez toate cerintele, inclusiv cea bonus, checker-ul imi da 180 de puncte.
+
+Descriere rezolvare:
+Pentru primele două cerințe doar am implementat metodele lipsă din structurile date fără să întâmpin dificultăți majore. Cred că cea mai "grea" parte la primele cerințe a fost să mă obișnuiec cu ierarhiile și cu modul în care au fost gândite clasele, ceea ce mi s-a părut extrem de interesant datorită faptului că a trebuit să ne adaptăm rezolvarea în funcție de ceva deja existent.
+
+Pentru rezolvarea celei de-a treia cerințe, am utilizat clasa "utility" pentru implementarea unor funcții ajutătoare si am utilizat listele de Useri si Produse create în Server la cerința 2.
+Pentru 3a, am căutat în listă toate espressoarele reduse și le-am inserat într-o listă nouă pe care am returnat-o.
+La 3b, am folosit aceeași idee ca la 3a, doar că am avut nevoie de dynamic_cast(aici trebuie să recunosc am stat puțin mai mult ca să înțeleg cum ar trebui să procedez). Pentru 3c, am creeat o functie de sortare in functie de pret in utility.cpp pe care am apelat-o dupa ce am creeat o listă nouă în care am inserat toate produsele resigilate, cu motivul "lipsa_accesorii". Pentru 3d, am procedat la fel ca al subpunctul anterior, doar că de data asta în funcția de sortare a trebuit să țin cont de toate aspectele precizate. La 3e, ca să găsesc județul cu cei mai mulți locuitori am creeat o funcție în utility în care am utilizat un vector de apariții, în funcție de maximul căruia am returnat județul de care aveam nevoie. La ultimul query, am salvat într-un vector ID-urile produselor a căror categoie era "telefon" sau "imprimantă", apoi am parcurs lista de utilizatori în care am căutat, în funcție de ID, persoanele ce îndeplineau condițiile menționate în cerință. 
+
+Pentru cerința 4 am implementat doar metodele cerute și singura care mi s-a părut mai dificilă, până am înțeles ce ar trebui să fac, a fost processRequests, dar a ajutat destul de mult link-ul pus în descrierea cerinței. 
+
+La cerința 5 am stat puțin mai mult decât la celelalte pentru că la un moment dat am început să "mă încurc" în clase și, deși aveam idee ce trebuie să fac și părea extrem de simplu, a fost puțin mai greu de realizat decât credeam. În linii mari, ca să pot rezolva acest task am urmat cam aceeași pași la ambele metode, mai întâi m-am asigurat că quantity>0, apoi am căutat în lista de Useri/Produse id-ul dat ca parametru și am verificat dacă(,) cantitatea cerută este disponibilă, după care, dacă toate condițiile erau îndeplinite, am parcurs lista de Useri/Produse și în funcție de ce se cerea adăugare/ștergere am apelat metodele deja implementate în celelalte clase.
+
+În final, deși tema mi-a dat câteva bătăi de cap, consider că e extrem de utilă și am învățat extrem de multe lucruri în urma rezolvării acesteia. :)
