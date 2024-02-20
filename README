@@ -1,14 +1,16 @@
-Am reusit sa implementez toate cerintele, inclusiv cea bonus, checker-ul imi da 180 de puncte.
+For the first two requirements, I implemented the missing methods in the data structures. 
+The most challenging part for these initial requirements was getting accustomed to the hierarchies and how the classes were designed. 
+This aspect was particularly intriguing as it required adapting our solutions based on existing structures.
 
-Descriere rezolvare:
-Pentru primele două cerințe doar am implementat metodele lipsă din structurile date fără să întâmpin dificultăți majore. Cred că cea mai "grea" parte la primele cerințe a fost să mă obișnuiec cu ierarhiile și cu modul în care au fost gândite clasele, ceea ce mi s-a părut extrem de interesant datorită faptului că a trebuit să ne adaptăm rezolvarea în funcție de ceva deja existent.
+For the third requirement, I utilized the "utility" class to implement helper functions and leveraged the User and Product lists created in Task 2.
+ For 3a, I searched the list for all discounted espresso machines and inserted them into a new list, which I then returned. 
+For 3b, I employed a similar approach to 3a, but this time I needed to use dynamic_cast. 
+For 3c, I created a sorting function in "utility.cpp" based on price, which I called after creating a new list and inserting all refurbished products with the reason "missing_accessories." 
+For 3d, I followed a similar approach as the previous subtask, but this time in the sorting function, I had to consider all specified aspects. 
+For 3e, to find the county with the most inhabitants, I created a function in "utility" using an occurrences vector, returning the county based on the maximum occurrences. 
+In the last query, I stored in a vector the IDs of the products belonging to the categories "phone" or "printer," then traversed the user list to find individuals meeting the conditions mentioned in the requirement.
 
-Pentru rezolvarea celei de-a treia cerințe, am utilizat clasa "utility" pentru implementarea unor funcții ajutătoare si am utilizat listele de Useri si Produse create în Server la cerința 2.
-Pentru 3a, am căutat în listă toate espressoarele reduse și le-am inserat într-o listă nouă pe care am returnat-o.
-La 3b, am folosit aceeași idee ca la 3a, doar că am avut nevoie de dynamic_cast(aici trebuie să recunosc am stat puțin mai mult ca să înțeleg cum ar trebui să procedez). Pentru 3c, am creeat o functie de sortare in functie de pret in utility.cpp pe care am apelat-o dupa ce am creeat o listă nouă în care am inserat toate produsele resigilate, cu motivul "lipsa_accesorii". Pentru 3d, am procedat la fel ca al subpunctul anterior, doar că de data asta în funcția de sortare a trebuit să țin cont de toate aspectele precizate. La 3e, ca să găsesc județul cu cei mai mulți locuitori am creeat o funcție în utility în care am utilizat un vector de apariții, în funcție de maximul căruia am returnat județul de care aveam nevoie. La ultimul query, am salvat într-un vector ID-urile produselor a căror categoie era "telefon" sau "imprimantă", apoi am parcurs lista de utilizatori în care am căutat, în funcție de ID, persoanele ce îndeplineau condițiile menționate în cerință. 
-
-Pentru cerința 4 am implementat doar metodele cerute și singura care mi s-a părut mai dificilă, până am înțeles ce ar trebui să fac, a fost processRequests, dar a ajutat destul de mult link-ul pus în descrierea cerinței. 
-
-La cerința 5 am stat puțin mai mult decât la celelalte pentru că la un moment dat am început să "mă încurc" în clase și, deși aveam idee ce trebuie să fac și părea extrem de simplu, a fost puțin mai greu de realizat decât credeam. În linii mari, ca să pot rezolva acest task am urmat cam aceeași pași la ambele metode, mai întâi m-am asigurat că quantity>0, apoi am căutat în lista de Useri/Produse id-ul dat ca parametru și am verificat dacă(,) cantitatea cerută este disponibilă, după care, dacă toate condițiile erau îndeplinite, am parcurs lista de Useri/Produse și în funcție de ce se cerea adăugare/ștergere am apelat metodele deja implementate în celelalte clase.
-
-În final, deși tema mi-a dat câteva bătăi de cap, consider că e extrem de utilă și am învățat extrem de multe lucruri în urma rezolvării acesteia. :)
+For requirement 4, I implemented the requested methods, and the one that seemed a bit more challenging was "processRequests." 
+Regarding requirement 5, to solve this task, I followed a similar approach for both methods. 
+First, I ensured that the quantity was greater than 0. Then, I searched the User/Product list for the given ID as a parameter and checked if the requested quantity was available. 
+If all conditions were met, I traversed the User/Product list, and based on the required addition/removal, I called the already implemented methods in the other classes.
